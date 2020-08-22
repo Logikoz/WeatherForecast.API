@@ -47,16 +47,11 @@ namespace WeatherForecast.API
 				seeder.Init();
 			}
 
-			//app.UseHttpsRedirection();
-
 			app.UseRouting();
 
 			app.UseAuthorization();
 
-			app.UseEndpoints(endpoints =>
-			{
-				endpoints.MapControllers();
-			});
+			app.UseEndpoints(endpoints => endpoints.MapControllers());
 		}
 	}
 }
